@@ -18,8 +18,8 @@ module.exports = function(app) {
 
     db.burger
       .create({
-        burger_name: burger.burger_name,
-        devoured: burger.devoured
+        burger_name: burgers.burger_name,
+        devoured: burgers.devoured
       })
       .then(function(results) {
         res.json(results);
